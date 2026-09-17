@@ -71,8 +71,7 @@ HOW TO BUILD IT
 
 from .extract import (
     get_raw_sales_data,
-    _generate_sales_data,
-    _messy_quantity,
+    
 )
 from .transform import (
     clean_sales_data,
@@ -101,8 +100,6 @@ from .display import (
 # find.
 __all__ = [
     'get_raw_sales_data',
-    '_generate_sales_data',
-    '_messy_quantity',
     'clean_sales_data',
     'calculate_total_revenue',
     'print_sales_table',
