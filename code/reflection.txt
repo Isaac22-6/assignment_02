@@ -1,4 +1,6 @@
-Write your reflection here.
+I learned when to write a accumulator. Initialzing a variable before a loop is vital for obtaining a output dependent 
+on previous data. For example, previous row revenue values wouldn't be stored after the loop resets for calculate_total_revenue without a accumulator , making it difficult to add the revenue from each row
+in the clean_data dictionary.
 
 See reflection.md for what makes a good reflection — be specific, use the
 terminology from this assignment (package, module, ETL, coercion, public API,
