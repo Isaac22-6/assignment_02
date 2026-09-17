@@ -68,10 +68,7 @@ HOW TO BUILD IT
 # imports — "from the display module that sits beside this file", not "from some
 # package called display installed on this machine".
 
-# TODO: import the public functions here, using relative imports.
-#       One group per module — .extract, then .transform, then .display.
-#       Start with only the functions you have actually written (see note 2 above),
-#       and come back to add the rest as you go.
+
 from .extract import (
     get_raw_sales_data,
     _generate_sales_data,
@@ -80,6 +77,9 @@ from .extract import (
 from .transform import (
     clean_sales_data,
     calculate_total_revenue,
+    summarize_by_item,
+    find_top_entry,
+    summarize_by_day
 )
 from .display import (
     print_sales_table,
@@ -108,6 +108,9 @@ __all__ = [
     'print_sales_table',
     'print_day_table',
     'print_item_table',
+    'summarize_by_item',
+    'find_top_entry',
+    'summarize_by_day'
 ]
     
 

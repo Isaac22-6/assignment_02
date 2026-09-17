@@ -230,6 +230,9 @@ def summarize_by_day(cleaned_data: list[dict]) -> list[dict]:
         date = row['date']
         if date not in date_totals:
             date_totals[date] = {'date': date, 'units_sold': 0, 'revenue': 0.0}
+        date_totals[date]['units_sold'] += row['qty']
+        date_totals[date]['revenue'] += row['total_revenue']
+    return sorted(date_totals.values(), key=lambda entry: entry['date'])
 
 
 def find_top_entry(summary: list[dict], field: str = "revenue") -> dict:
