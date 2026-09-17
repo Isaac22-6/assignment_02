@@ -1,6 +1,9 @@
 I learned when to write a accumulator. Initialzing a variable before a loop is vital for obtaining a output dependent 
 on previous data. For example, writing a accumulator for calculate_total_revenue in the transform module allowed me to store and 
-add the revenue values from every row of cleaned_data list of dictionaries when the loop in the functiom resets.
+add the revenue values from every row of cleaned_data list of dictionaries when the loop in the functiom resets. I also strengthened 
+my ability to trace data flow through a pipeline and recognize when a state needs to persist across iterations. I plan to practice this pattern 
+on more complex aggregations like grouping revenue by a category, so I can get comfortable choosing the right 
+accumulator structure for different outputs.
 
 See reflection.md for what makes a good reflection — be specific, use the
 terminology from this assignment (package, module, ETL, coercion, public API,
