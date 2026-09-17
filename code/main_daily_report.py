@@ -72,5 +72,5 @@ print_day_table(day_summary)
 print()
 
 print(f'Total Revenue:          ${total_revenue:,.2f}')
-print(f'Busiest day by revenue: {most_sales_day['date']} (${most_sales_day['revenue']:,.2f})')
-print(f'Busiest day by units:   {most_units_day['date']} ({most_units_day['units_sold']} units)')  
+print(f'Busiest day by revenue: {most_sales_day["date"]} (${most_sales_day["revenue"]:,.2f})')
+print(f'Busiest day by units:   {most_units_day["date"]} ({most_units_day["units_sold"]} units)')  
